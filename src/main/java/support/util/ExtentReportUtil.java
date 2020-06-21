@@ -8,12 +8,11 @@ import com.aventstack.extentreports.reporter.configuration.Theme;
 import org.apache.commons.io.FileUtils;
 import org.openqa.selenium.OutputType;
 import support.core.DriverManager;
+import support.core.PropertieManager;
 import support.mobileActions.Actions;
 import java.io.File;
 import java.io.IOException;
 import java.io.UnsupportedEncodingException;
-import java.util.HashMap;
-import java.util.Map;
 
 public class ExtentReportUtil {
 
@@ -33,10 +32,9 @@ public class ExtentReportUtil {
     }
 
 
-    public void createHtmlReporter(String pathname, String reportName, AnalysisStrategy analysisStrategy,
-                                   HashMap<String, String> systemInfo) {
+    public void createHtmlReporter(String pathname, String reportName, AnalysisStrategy analysisStrategy) {
 
-        if(!isReportCreated){
+        if (!isReportCreated) {
             System.out.println("--------- \n Realizando as configurações do relatório. \n --------- ");
 
             ExtentHtmlReporter htmlReporter = new ExtentHtmlReporter(pathname);
@@ -52,9 +50,10 @@ public class ExtentReportUtil {
                 e.printStackTrace();
             }
 
-            for (Map.Entry<String, String> item : systemInfo.entrySet()) {
-                _extent.setSystemInfo(item.getKey(), item.getValue());
-            }
+            _extent.setSystemInfo("productName", PropertieManager.getInstance().readProperties().getProperty("productName"));
+            _extent.setSystemInfo("productVersion", PropertieManager.getInstance().readProperties().getProperty("productVersion"));
+            _extent.setSystemInfo("platform", PropertieManager.getInstance().readProperties().getProperty("platformName"));
+            _extent.setSystemInfo("platformVersion", PropertieManager.getInstance().readProperties().getProperty("platformVersion"));
 
             isReportCreated = true;
             System.out.println("Relatório configurado com sucesso!");

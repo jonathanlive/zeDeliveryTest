@@ -11,7 +11,6 @@ import cucumber.api.TestCase;
 import cucumber.api.event.*;
 import support.util.ExtentReportUtil;
 import support.util.FileUtil;
-
 import java.nio.file.FileSystems;
 
 public class CustomPlugin implements EventListener {
@@ -20,9 +19,9 @@ public class CustomPlugin implements EventListener {
     private ThreadLocal<ExtentTest> _test = new ThreadLocal<>();
     private ExtentTest _node;
     private ExtentTest _failedNode;
-    private Markup _mkGreen = MarkupHelper.createLabel("Aprovado", ExtentColor.GREEN);
-    private Markup _mkRed = MarkupHelper.createLabel("Reprovado", ExtentColor.RED);
-    private Markup _mkOrange = MarkupHelper.createLabel("Pulou", ExtentColor.ORANGE);
+    private Markup _mkGreen = MarkupHelper.createLabel("Passed", ExtentColor.GREEN);
+    private Markup _mkRed = MarkupHelper.createLabel("Failed", ExtentColor.RED);
+    private Markup _mkOrange = MarkupHelper.createLabel("Skipped", ExtentColor.ORANGE);
     private String projectFolder = FileSystems.getDefault().getPath("").toAbsolutePath().toString();
     private String platformName;
     private String deviceName;
@@ -87,10 +86,8 @@ public class CustomPlugin implements EventListener {
     };
 
     private void startRun(TestRunStarted event) {
-        //String reportPath = projectFolder + "/target/CieloAppReports/" + FileUtil.createRandomFileName(  "cieloAppReport",".html");
-        String reportPath = projectFolder + "/target/CieloAppReports/CieloAppReport.html";
-        extentReportUtil.createHtmlReporter(reportPath, "CieloApp Report",
-                AnalysisStrategy.BDD, new AppSystemInfo().getAppSystemInfo());
+        String reportPath = projectFolder + "/target/reports/zeDeliveryReport.html";
+        extentReportUtil.createHtmlReporter(reportPath, "zeDelivery Report", AnalysisStrategy.BDD);
     }
 
     private void finishRun(TestRunFinished event) {
@@ -105,17 +102,17 @@ public class CustomPlugin implements EventListener {
         deviceName = (String) DriverManager.getInstance().getDriver()
                 .getCapabilities().getCapability("deviceModel");
         test.assignCategory(platformName);
-        test.assignCategory("Modelo: " + deviceName);
-        test.assignDevice("Modelo: " + deviceName);
+        test.assignCategory("Device: " + deviceName);
+        test.assignDevice("Device: " + deviceName);
         _test.set(test);
         _failedNode = null;
     }
 
     private void finishCase(TestCaseFinished event) {
         if (event.testCase instanceof TestCase) {
-            String filepath = projectFolder + "/target/CieloAppReports/Screenshots/" +
-                    platformName + "/" + FileUtil.createRandomFileName("evidence",".png");
-            String shortfilepath = filepath.replace(projectFolder + "/target/CieloAppReports",".");
+            String filepath = projectFolder + "/target/reports/screenshots/" +
+                    platformName + "/" + FileUtil.createRandomFileName("evidence", ".png");
+            String shortfilepath = filepath.replace(projectFolder + "/target/reports", ".");
 
             extentReportUtil.captureImage(filepath);
 
@@ -153,7 +150,7 @@ public class CustomPlugin implements EventListener {
 
             if (event.result.getStatus().equals(Result.Type.FAILED)) {
                 _node.fail(_mkRed);
-                if(_failedNode == null){
+                if (_failedNode == null) {
                     _failedNode = _node;
                 }
             }

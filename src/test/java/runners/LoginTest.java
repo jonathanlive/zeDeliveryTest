@@ -10,7 +10,7 @@ import support.core.ExecutionManager;
 @RunWith(Cucumber.class)
 @CucumberOptions(
 
-        features = "./src/Features",
+        features = "./src/test/resources/features",
         glue = "steps",
         plugin = "pretty",
         monochrome = false,

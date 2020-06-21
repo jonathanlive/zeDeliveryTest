@@ -1,7 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="1fb7af80-8e73-4054-80dd-7a08ae9186b1" name="Default Changelist" comment="" />
+    <list default="true" id="1fb7af80-8e73-4054-80dd-7a08ae9186b1" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/resources/features/AddressResearch.feature" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/resources/features/Cart.feature" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/resources/features/Login.feature" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/automation.properties" beforeDir="false" afterPath="$PROJECT_DIR$/automation.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Features/Login.feature" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/support/core/AppSystemInfo.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/support/core/CustomPlugin.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/support/core/CustomPlugin.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/support/util/ExtentReportUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/support/util/ExtentReportUtil.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/runners/LoginTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/runners/LoginTest.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -14,6 +27,9 @@
         <option value="Class" />
       </list>
     </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="MavenImportPreferences">
     <option name="importingSettings">
@@ -30,11 +46,14 @@
   </component>
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
   </component>
   <component name="RunManager">
     <configuration name="LoginTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="zeAutomation" />
+      <module name="zeDeliveryTest" />
+      <useClassPathOnly />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="runners.*" />
@@ -43,7 +62,9 @@
       </extension>
       <option name="PACKAGE_NAME" value="runners" />
       <option name="MAIN_CLASS_NAME" value="runners.LoginTest" />
+      <option name="METHOD_NAME" value="" />
       <option name="TEST_OBJECT" value="class" />
+      <option name="PARAMETERS" value="" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -68,26 +89,30 @@
     <servers />
   </component>
   <component name="WindowStateProjectService">
-    <state x="413" y="116" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1592676530325">
+    <state x="280" y="24" key="#LoginTest" timestamp="1592696525624">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
-    <state x="413" y="116" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1366.738@0.0.1366.738" timestamp="1592676530325" />
-    <state width="1323" height="296" key="GridCell.Tab.0.bottom" timestamp="1592681932419">
+    <state x="280" y="24" key="#LoginTest/0.0.1366.738@0.0.1366.738" timestamp="1592696525624" />
+    <state x="413" y="116" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1592682918443">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
-    <state width="1323" height="296" key="GridCell.Tab.0.bottom/0.0.1366.738@0.0.1366.738" timestamp="1592681932419" />
-    <state width="1323" height="296" key="GridCell.Tab.0.center" timestamp="1592681932419">
+    <state x="413" y="116" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1366.738@0.0.1366.738" timestamp="1592682918443" />
+    <state width="1323" height="296" key="GridCell.Tab.0.bottom" timestamp="1592700794959">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
-    <state width="1323" height="296" key="GridCell.Tab.0.center/0.0.1366.738@0.0.1366.738" timestamp="1592681932419" />
-    <state width="1323" height="296" key="GridCell.Tab.0.left" timestamp="1592681932419">
+    <state width="1323" height="296" key="GridCell.Tab.0.bottom/0.0.1366.738@0.0.1366.738" timestamp="1592700794959" />
+    <state width="1323" height="296" key="GridCell.Tab.0.center" timestamp="1592700794959">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
-    <state width="1323" height="296" key="GridCell.Tab.0.left/0.0.1366.738@0.0.1366.738" timestamp="1592681932419" />
-    <state width="1323" height="296" key="GridCell.Tab.0.right" timestamp="1592681932419">
+    <state width="1323" height="296" key="GridCell.Tab.0.center/0.0.1366.738@0.0.1366.738" timestamp="1592700794959" />
+    <state width="1323" height="296" key="GridCell.Tab.0.left" timestamp="1592700794959">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
-    <state width="1323" height="296" key="GridCell.Tab.0.right/0.0.1366.738@0.0.1366.738" timestamp="1592681932419" />
+    <state width="1323" height="296" key="GridCell.Tab.0.left/0.0.1366.738@0.0.1366.738" timestamp="1592700794959" />
+    <state width="1323" height="296" key="GridCell.Tab.0.right" timestamp="1592700794959">
+      <screen x="0" y="0" width="1366" height="738" />
+    </state>
+    <state width="1323" height="296" key="GridCell.Tab.0.right/0.0.1366.738@0.0.1366.738" timestamp="1592700794959" />
     <state width="1323" height="227" key="GridCell.Tab.1.bottom" timestamp="1592681489475">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
