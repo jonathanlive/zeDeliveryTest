@@ -1,3 +1,4 @@
+@AddressResearch
 Feature: Address Research
 
   @test

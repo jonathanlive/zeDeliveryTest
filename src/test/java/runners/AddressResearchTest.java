@@ -1,5 +1,6 @@
 package runners;
 
+
 import io.cucumber.junit.Cucumber;
 import io.cucumber.junit.CucumberOptions;
 import org.junit.AfterClass;
@@ -16,10 +17,10 @@ import support.core.ExecutionManager;
         monochrome = false,
         dryRun = false,
         snippets = CucumberOptions.SnippetType.CAMELCASE,
-        tags = "@Login"
+        tags = "@AddressResearch"
 
 )
-public class LoginTest {
+public class AddressResearchTest {
 
     @BeforeClass
     public static void setUp(){

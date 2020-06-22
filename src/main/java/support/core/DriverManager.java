@@ -3,6 +3,7 @@ package support.core;
 import io.appium.java_client.AppiumDriver;
 import io.appium.java_client.android.AndroidDriver;
 import io.appium.java_client.ios.IOSDriver;
+import org.openqa.selenium.SessionNotCreatedException;
 import org.openqa.selenium.remote.DesiredCapabilities;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import java.net.URL;
@@ -32,17 +33,22 @@ public class DriverManager {
         this.url = url;
         this.cap = cap;
         this.platformName = cap.getPlatform().name();
+        try {
+            if (platformName.equalsIgnoreCase("ios"))
+                driver.set(new IOSDriver(url, cap));
+            else
+                driver.set(new AndroidDriver(url, cap));
 
-        if (platformName.equalsIgnoreCase("ios"))
-            driver.set(new IOSDriver(url, cap));
-        else
-            driver.set(new AndroidDriver(url, cap));
-
-        setDefaultTimeOut();
+            setDefaultTimeOut();
+        }catch (SessionNotCreatedException e){
+            System.out.println("Sessão não pode ser criada: " + e.getMessage());
+        }
     }
 
     public void closeApp() {
-        driver.get().closeApp();
+        if (driver.get() != null) {
+            driver.get().closeApp();
+        }
     }
 
     public void stopDriver() {
@@ -57,7 +63,7 @@ public class DriverManager {
             startDriver(url, cap);
         }
 
-        if (getApplicationState() == 0 || getApplicationState() == 1)
+        if (getApplicationState() == 0 || getApplicationState() == 1 )
             driver.get().launchApp();
 
         return driver.get();

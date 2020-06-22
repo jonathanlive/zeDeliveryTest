@@ -7,6 +7,7 @@ import io.appium.java_client.touch.WaitOptions;
 import io.appium.java_client.touch.offset.PointOption;
 import model.Direction;
 import org.openqa.selenium.Dimension;
+import org.openqa.selenium.NoAlertPresentException;
 import org.openqa.selenium.StaleElementReferenceException;
 import org.openqa.selenium.WebDriverException;
 import org.openqa.selenium.support.ui.ExpectedConditions;
@@ -17,7 +18,6 @@ import java.time.Duration;
 import java.util.List;
 
 public class Actions {
-
 
     /**
      * Explicitamente espera por alguns segundos até que a proxima instrucão possa ser executada.
@@ -35,11 +35,11 @@ public class Actions {
     /**
      * Explicitamente espera por alguns segundos até que a proxima instrucão possa ser executada.
      *
-     * @param miliseconds Tempo limite de espera.
+     * @param maxTimeWaitInMiliseconds Tempo limite de espera.
      */
-    public static void waitForMiliseconds(long miliseconds) {
+    public static void waitForMiliseconds(long maxTimeWaitInMiliseconds) {
         try {
-            Thread.sleep(miliseconds);
+            Thread.sleep(maxTimeWaitInMiliseconds);
         } catch (InterruptedException e) {
             throw new AutomationException(e.getMessage());
         }
@@ -71,12 +71,12 @@ public class Actions {
      * Aguarda até que um determinado elemento esteja visível.
      *
      * @param e                 Elemento a ser verificado.
-     * @param timeWaitInSeconds Tempo limite de espera pelo elemento.
+     * @param maxTimeWaitInSeconds Tempo limite de espera pelo elemento.
      * @return
      */
-    public static boolean waitForElement(MobileElement e, int timeWaitInSeconds) {
-        WebDriverWait wait = new WebDriverWait(DriverManager.getInstance().getDriver(), timeWaitInSeconds);
-        if (timeWaitInSeconds <= 0)
+    public static boolean waitForElement(MobileElement e, int maxTimeWaitInSeconds) {
+        WebDriverWait wait = new WebDriverWait(DriverManager.getInstance().getDriver(), maxTimeWaitInSeconds);
+        if (maxTimeWaitInSeconds <= 0)
             throw new AutomationException("Náo é possível declarar tempo de espera menor ou igual a zero segundos");
 
         try {
@@ -93,15 +93,12 @@ public class Actions {
             return false;
         }
 
-        if (e.isDisplayed())
-            return true;
-
-        return false;
+        return e.isDisplayed();
     }
 
-    public static boolean waitForElements(List<MobileElement> eList, int timeWaitInSeconds) {
-        WebDriverWait wait = new WebDriverWait(DriverManager.getInstance().getDriver(), timeWaitInSeconds);
-        if (timeWaitInSeconds <= 0)
+    public static boolean waitForElements(List<MobileElement> eList, int maxTimeWaitInSeconds) {
+        WebDriverWait wait = new WebDriverWait(DriverManager.getInstance().getDriver(), maxTimeWaitInSeconds);
+        if (maxTimeWaitInSeconds <= 0)
             throw new AutomationException("Náo é possível declarar tempo de espera menor ou igual a zero segundos");
 
         try {
@@ -164,15 +161,15 @@ public class Actions {
         return platformName.equalsIgnoreCase("iOS");
     }
 
-    public static void clickWithFluentWait(MobileElement element, int timeWaitInSeconds) {
-        waitForElement(element, timeWaitInSeconds);
+    public static void clickWithFluentWait(MobileElement element, int maxTimeWaitInSeconds) {
+        waitForElement(element, maxTimeWaitInSeconds);
         if (isDisplayed(element))
             element.click();
     }
 
-    public static void clickWithFluentWait(MobileElement element, int timeWaitInSeconds, int nTimes) {
+    public static void clickWithFluentWait(MobileElement element, int maxTimeWaitInSeconds, int nTimes) {
         for (int i = 0; i < nTimes; i++) {
-            waitForElement(element, timeWaitInSeconds);
+            waitForElement(element, maxTimeWaitInSeconds);
             element.click();
         }
     }
@@ -225,11 +222,27 @@ public class Actions {
 
     }
 
-    public static void acceptAlert(){
-        try{
-            DriverManager.getInstance().getDriver().switchTo().alert().accept();
-        }catch (Exception ex){
+    public static void acceptAlert(int maxTimeWaitInSeconds){
+        for (int duration = 0; duration < maxTimeWaitInSeconds; duration++){
+            try{
+                DriverManager.getInstance().getDriver().switchTo().alert().accept();
+                break;
+            }catch (NoAlertPresentException e){
+                System.out.println("Aguardando alerta: " + duration);
+                waitForSeconds(1);
+            }
+        }
+    }
 
+    public static void dismissAlert(int maxTimeWaitInSeconds){
+        for (int duration = 0; duration < maxTimeWaitInSeconds; duration++){
+            try{
+                DriverManager.getInstance().getDriver().switchTo().alert().accept();
+                break;
+            }catch (NoAlertPresentException e){
+                System.out.println("Aguardando alerta: " + duration);
+                waitForSeconds(1);
+            }
         }
     }
 }

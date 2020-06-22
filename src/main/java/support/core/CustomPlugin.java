@@ -2,6 +2,7 @@ package support.core;
 
 import com.aventstack.extentreports.AnalysisStrategy;
 import com.aventstack.extentreports.ExtentTest;
+import com.aventstack.extentreports.Status;
 import com.aventstack.extentreports.markuputils.ExtentColor;
 import com.aventstack.extentreports.markuputils.Markup;
 import com.aventstack.extentreports.markuputils.MarkupHelper;
@@ -97,11 +98,8 @@ public class CustomPlugin implements EventListener {
     private void startCase(TestCaseStarted event) {
         System.out.println(event.testCase.getName());
         ExtentTest test = extentReportUtil.createTest(event.testCase.getName());
-        platformName = (String) DriverManager.getInstance().getDriver()
-                .getCapabilities().getCapability("platformName");
-        deviceName = (String) DriverManager.getInstance().getDriver()
-                .getCapabilities().getCapability("deviceModel");
-        test.assignCategory(platformName);
+        platformName = PropertieManager.getInstance().readProperties().getProperty("platformName");
+        deviceName = PropertieManager.getInstance().readProperties().getProperty("deviceName");
         test.assignCategory("Device: " + deviceName);
         test.assignDevice("Device: " + deviceName);
         _test.set(test);
@@ -122,6 +120,7 @@ public class CustomPlugin implements EventListener {
 
             if (event.result.getStatus().equals(Result.Type.FAILED)) {
                 extentReportUtil.attachFileToReport(_failedNode, shortfilepath);
+                _test.get().log(Status.ERROR,event.result.getError());
             }
 
             if (event.result.getStatus().equals(Result.Type.SKIPPED)) {

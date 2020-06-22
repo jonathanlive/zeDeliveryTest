@@ -1,3 +1,4 @@
+@Cart
 Feature: Cart
 
   @test
@@ -9,5 +10,10 @@ Feature: Cart
     Then the cart will be updated with the selected item and correct amount <amount>
 
     Examples:
-      | category | amount |
-      | cerveja  | 10     |
+      | category   | amount |
+      | Cervejas   | 5      |
+      | Destilados | 3      |
+      | Vinhos     | 7      |
+      | SemAlcool  | 4      |
+      | Petiscos   | 3      |
+      | Outros     | 4      |

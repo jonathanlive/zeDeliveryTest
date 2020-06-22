@@ -72,7 +72,10 @@ public class ExtentReportUtil {
             File file = DriverManager.getInstance().getDriver().getScreenshotAs(OutputType.FILE);
             FileUtils.copyFile(file, new File(filepath));
         } catch (IOException e) {
-            e.printStackTrace();
+            System.out.println("Não foi possível criar o arquivo: "+e.getMessage());
+        }
+        catch (NullPointerException e){
+            System.out.println("Erro ao capturar imagem: "+ e.getMessage());
         }
     }
 

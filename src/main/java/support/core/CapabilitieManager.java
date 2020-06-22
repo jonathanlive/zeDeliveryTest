@@ -46,6 +46,7 @@ public class CapabilitieManager {
         capabilities.setCapability("appPackage", appPackage);
         capabilities.setCapability("unicodeKeyboard", "true");
         capabilities.setCapability("resetKeyboard", "true");
+        capabilities.setCapability("noReset",false);
         return capabilities;
     }
 }

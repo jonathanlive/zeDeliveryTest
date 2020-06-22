@@ -16,10 +16,10 @@ import support.core.ExecutionManager;
         monochrome = false,
         dryRun = false,
         snippets = CucumberOptions.SnippetType.CAMELCASE,
-        tags = "@Login"
+        tags = "@Cart"
 
 )
-public class LoginTest {
+public class CartTest {
 
     @BeforeClass
     public static void setUp(){

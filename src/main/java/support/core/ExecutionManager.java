@@ -1,5 +1,6 @@
 package support.core;
 
+import model.Customer;
 import org.openqa.selenium.remote.DesiredCapabilities;
 
 public class ExecutionManager {
@@ -7,6 +8,7 @@ public class ExecutionManager {
     private AppiumController appiumController;
     private DesiredCapabilities caps;
     private static ExecutionManager instance;
+    private ThreadLocal<Customer> customer = new ThreadLocal<>();
 
     private ExecutionManager() {
 
@@ -33,6 +35,14 @@ public class ExecutionManager {
     public void stopExecution() {
         DriverManager.getInstance().stopDriver();
         appiumController.stopAppium();
+    }
+
+    public void setCustomer(Customer customer) {
+        this.customer.set(customer);
+    }
+
+    public Customer getCustomer() {
+        return customer.get();
     }
 }
 
