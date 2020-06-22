@@ -9,16 +9,16 @@ This project was develop for a code challenge by ZeDelivery's Company
         it could impact on people become frustated and loss of money.
         
 #### Change on Address Location
-        This flow must be highlithed as well, after a hard day our customes would like 
+        This flow must be highlighted as well, after a hard day our customes would like 
         to enjoy a cold drink by the confort of their home, imagine if they have to wait two hours more
         because the address was incorrect. 
         
 #### Card Item Verification
-        This is another important feature, if the cart was not working properly it could cause alot of charge back.
+        This is another important feature, if the cart was not working properly it could cause alot of chargeback.
         
 ## Challenge 2 - UI automation test
 I develop a mobile automation project on this stage, because it's the most acessible channel for our customers today.
-The project is currently targering only Android but it's ready for IOS and multitreading automated tests.
+The project is currently targeting only Android but it's ready for IOS and multitreading automated tests.
 
 #### Requirements
         - intellij (Preferred IDE)
