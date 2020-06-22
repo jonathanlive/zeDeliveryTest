@@ -1,5 +1,5 @@
-@AddressResearch
-Feature: Address Research
+@ChangeAddress
+Feature: ChangeAddress
 
   @test
   Scenario: Search using full address

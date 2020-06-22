@@ -7,14 +7,14 @@ import model.Customer;
 import org.junit.Assert;
 import pages.AddressPage;
 import pages.BasePage;
-import pages.DetalhesDoPedidoPage;
+import pages.OrderDetailsPage;
 import pages.HomePage;
 import support.util.CustomerUtil;
 
-public class AddressResearch {
+public class ChangeAddressSteps {
 
     HomePage homePage = BasePage.getInstance(HomePage.class);
-    DetalhesDoPedidoPage detalhesDoPedidoPage = BasePage.getInstance(DetalhesDoPedidoPage.class);
+    OrderDetailsPage orderDetailsPage = BasePage.getInstance(OrderDetailsPage.class);
     AddressPage addressPage = BasePage.getInstance(AddressPage.class);
     private Customer customer = CustomerUtil.createNewCustomer();
 
@@ -25,9 +25,9 @@ public class AddressResearch {
 
     @And("add a new address")
     public void addANewAddress() {
-        detalhesDoPedidoPage.clickBtnEditAddress();
+        orderDetailsPage.clickBtnEditAddress();
         addressPage.setAddress(customer.getAddress().getStreet(),customer.getAddress().getNumber(),customer.getAddress().getCompl(),customer.getAddress().getNeighborhood());
-        detalhesDoPedidoPage.clickBtnVerProdutosDisponiveis();
+        orderDetailsPage.clickBtnVerProdutosDisponiveis();
     }
 
     @Then("homepage will be updated with the new address information")

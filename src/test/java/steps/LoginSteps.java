@@ -12,7 +12,7 @@ import support.util.CustomerUtil;
 public class LoginSteps {
 
     LoginPage loginPage = BasePage.getInstance(LoginPage.class);
-    DetalhesDoPedidoPage detalhesDoPedidoPage = BasePage.getInstance(DetalhesDoPedidoPage.class);
+    OrderDetailsPage orderDetailsPage = BasePage.getInstance(OrderDetailsPage.class);
     AddressPage addressPage = BasePage.getInstance(AddressPage.class);
     HomePage homePage = BasePage.getInstance(HomePage.class);
 
@@ -32,7 +32,7 @@ public class LoginSteps {
     @And("confirm the address location")
     public void confirmTheAdressLocation() {
         addressPage.setAddress(customer.getAddress().getStreet(),customer.getAddress().getNumber(), customer.getAddress().getCompl(), customer.getAddress().getNeighborhood());
-        detalhesDoPedidoPage.clickBtnVerProdutosDisponiveis();
+        orderDetailsPage.clickBtnVerProdutosDisponiveis();
     }
 
     @Then("homepage will be displayed")
@@ -48,8 +48,7 @@ public class LoginSteps {
         loginPage.selectLinkEntrar();
         loginPage.login(defaultEmail, defaultPassword);
         addressPage.setAddress(customer.getAddress().getStreet(),customer.getAddress().getNumber(), customer.getAddress().getCompl(), customer.getAddress().getNeighborhood());
-        detalhesDoPedidoPage.clickBtnVerProdutosDisponiveis();
+        orderDetailsPage.clickBtnVerProdutosDisponiveis();
         homePage.checkHomePage();
     }
-
 }

@@ -4,18 +4,12 @@
     <list default="true" id="1fb7af80-8e73-4054-80dd-7a08ae9186b1" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/automation.properties" beforeDir="false" afterPath="$PROJECT_DIR$/automation.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/support/core/CapabilitieManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/support/core/CapabilitieManager.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/support/core/CustomPlugin.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/support/core/CustomPlugin.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/support/core/DriverManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/support/core/DriverManager.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/support/core/ExecutionManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/support/core/ExecutionManager.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/support/mobileActions/Actions.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/support/mobileActions/Actions.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/support/mobileActions/AndroidActions.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/support/mobileActions/AndroidActions.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/support/util/ExtentReportUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/support/util/ExtentReportUtil.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/runners/LoginTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/runners/LoginTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/resources/features/AddressResearch.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/features/AddressResearch.feature" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/resources/features/Cart.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/features/Cart.feature" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/resources/features/Login.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/features/Login.feature" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pages/DetalhesDoPedidoPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pages/OrderDetailsPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/runners/AddressResearchTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/runners/ChangeAddressTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/steps/AddressResearch.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/steps/ChangeAddressSteps.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/steps/CartSteps.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/steps/CartSteps.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/steps/LoginSteps.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/steps/LoginSteps.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resources/features/AddressResearch.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/features/ChangeAddress.feature" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -56,21 +50,6 @@
     <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
   </component>
   <component name="RunManager" selected="JUnit.ZeDeliveryTest">
-    <configuration name="AddressResearchTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="zeDeliveryTest" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="runners.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="runners" />
-      <option name="MAIN_CLASS_NAME" value="runners.AddressResearchTest" />
-      <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="CartTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="zeDeliveryTest" />
       <extension name="coverage">
@@ -81,6 +60,21 @@
       </extension>
       <option name="PACKAGE_NAME" value="runners" />
       <option name="MAIN_CLASS_NAME" value="runners.CartTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ChangeAddressTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="zeDeliveryTest" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="runners.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="runners" />
+      <option name="MAIN_CLASS_NAME" value="runners.ChangeAddressTest" />
       <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -122,7 +116,7 @@
     <recent_temporary>
       <list>
         <item itemvalue="JUnit.ZeDeliveryTest" />
-        <item itemvalue="JUnit.AddressResearchTest" />
+        <item itemvalue="JUnit.ChangeAddressTest" />
         <item itemvalue="JUnit.CartTest" />
         <item itemvalue="JUnit.LoginTest" />
       </list>
@@ -150,10 +144,10 @@
       <screen x="0" y="0" width="1366" height="738" />
     </state>
     <state x="452" y="70" key="#com.intellij.ide.util.MemberChooser/0.0.1366.738@0.0.1366.738" timestamp="1592774360858" />
-    <state x="367" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1592710704061">
+    <state x="63" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1592796031484">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
-    <state x="367" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.0.1366.738@0.0.1366.738" timestamp="1592710704061" />
+    <state x="63" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.0.1366.738@0.0.1366.738" timestamp="1592796031484" />
     <state x="413" y="116" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1592682918443">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
@@ -162,22 +156,22 @@
       <screen x="0" y="0" width="1366" height="738" />
     </state>
     <state x="462" y="124" key="FileChooserDialogImpl/0.0.1366.738@0.0.1366.738" timestamp="1592703084771" />
-    <state width="1323" height="258" key="GridCell.Tab.0.bottom" timestamp="1592794003646">
+    <state width="1323" height="258" key="GridCell.Tab.0.bottom" timestamp="1592797042820">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
-    <state width="1323" height="258" key="GridCell.Tab.0.bottom/0.0.1366.738@0.0.1366.738" timestamp="1592794003646" />
-    <state width="1323" height="258" key="GridCell.Tab.0.center" timestamp="1592794003646">
+    <state width="1323" height="258" key="GridCell.Tab.0.bottom/0.0.1366.738@0.0.1366.738" timestamp="1592797042820" />
+    <state width="1323" height="258" key="GridCell.Tab.0.center" timestamp="1592797042820">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
-    <state width="1323" height="258" key="GridCell.Tab.0.center/0.0.1366.738@0.0.1366.738" timestamp="1592794003646" />
-    <state width="1323" height="258" key="GridCell.Tab.0.left" timestamp="1592794003646">
+    <state width="1323" height="258" key="GridCell.Tab.0.center/0.0.1366.738@0.0.1366.738" timestamp="1592797042820" />
+    <state width="1323" height="258" key="GridCell.Tab.0.left" timestamp="1592797042820">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
-    <state width="1323" height="258" key="GridCell.Tab.0.left/0.0.1366.738@0.0.1366.738" timestamp="1592794003646" />
-    <state width="1323" height="258" key="GridCell.Tab.0.right" timestamp="1592794003646">
+    <state width="1323" height="258" key="GridCell.Tab.0.left/0.0.1366.738@0.0.1366.738" timestamp="1592797042820" />
+    <state width="1323" height="258" key="GridCell.Tab.0.right" timestamp="1592797042820">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
-    <state width="1323" height="258" key="GridCell.Tab.0.right/0.0.1366.738@0.0.1366.738" timestamp="1592794003646" />
+    <state width="1323" height="258" key="GridCell.Tab.0.right/0.0.1366.738@0.0.1366.738" timestamp="1592797042820" />
     <state width="1323" height="250" key="GridCell.Tab.1.bottom" timestamp="1592789210486">
       <screen x="0" y="0" width="1366" height="738" />
     </state>

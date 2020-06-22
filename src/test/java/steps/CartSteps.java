@@ -4,7 +4,6 @@ import io.cucumber.java.en.And;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 import model.Category;
-import org.junit.Assert;
 import pages.BasePage;
 import pages.CartPage;
 import pages.HomePage;
@@ -22,7 +21,6 @@ public class CartSteps {
         Category newCategory = Category.valueOf(category.toUpperCase());
         homePage.selectCategory(newCategory);
     }
-
 
     @And("selects the first item on the list")
     public void selectsTheFirstItemOnTheList() {

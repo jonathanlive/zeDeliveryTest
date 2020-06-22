@@ -4,7 +4,7 @@ import io.appium.java_client.MobileElement;
 import io.appium.java_client.pagefactory.AndroidFindBy;
 import support.mobileActions.Actions;
 
-public class DetalhesDoPedidoPage extends BasePage {
+public class OrderDetailsPage extends BasePage {
 
     @AndroidFindBy(uiAutomator = "new UiSelector().description(\"edit-card\")")
     private MobileElement btnEditAddress;

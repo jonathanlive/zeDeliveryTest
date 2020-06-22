@@ -17,10 +17,10 @@ import support.core.ExecutionManager;
         monochrome = false,
         dryRun = false,
         snippets = CucumberOptions.SnippetType.CAMELCASE,
-        tags = "@AddressResearch"
+        tags = "@ChangeAddress"
 
 )
-public class AddressResearchTest {
+public class ChangeAddressTest {
 
     @BeforeClass
     public static void setUp(){
