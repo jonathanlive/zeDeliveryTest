@@ -3,13 +3,8 @@
   <component name="ChangeListManager">
     <list default="true" id="1fb7af80-8e73-4054-80dd-7a08ae9186b1" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/automation.properties" beforeDir="false" afterPath="$PROJECT_DIR$/automation.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pages/DetalhesDoPedidoPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pages/OrderDetailsPage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/runners/AddressResearchTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/runners/ChangeAddressTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/steps/AddressResearch.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/steps/ChangeAddressSteps.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/steps/CartSteps.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/steps/CartSteps.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/steps/LoginSteps.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/steps/LoginSteps.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/resources/features/AddressResearch.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/features/ChangeAddress.feature" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -200,6 +195,10 @@
       <screen x="0" y="0" width="1366" height="738" />
     </state>
     <state x="330" y="0" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser/0.0.1366.738@0.0.1366.738" timestamp="1592712659682" />
+    <state x="492" y="286" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1592799003224">
+      <screen x="0" y="0" width="1366" height="738" />
+    </state>
+    <state x="492" y="286" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1366.738@0.0.1366.738" timestamp="1592799003224" />
     <state x="435" y="290" key="org.jetbrains.plugins.cucumber.inspections.ui.CreateStepDefinitionFileDialog" timestamp="1592703192378">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
