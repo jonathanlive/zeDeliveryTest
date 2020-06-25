@@ -34,6 +34,14 @@ The project is currently targeting only Android but it's ready for IOS and multi
         Enable your phone for usb debugging and it must be authorized on adb
         Set up your device changing the deviceName and platformVersion on automation.properties file
         Reports will be automatically generated  on /Target/reports folder
+        
+        Tests can be executed using the following command on a shell inside the project folder:
+        mvn -Dtest=ZeDeliveryTest test
+        
+        Obs: Don't forget to restore your device keyboard after running the tests. Instructions below.
+        https://www.androidcentral.com/how-set-default-keyboard-your-android-phone
+        
+        
 
         
         

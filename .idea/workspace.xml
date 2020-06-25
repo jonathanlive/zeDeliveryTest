@@ -4,6 +4,9 @@
     <list default="true" id="1fb7af80-8e73-4054-80dd-7a08ae9186b1" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/runners/ZeDeliveryTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/runners/ZeDeliveryTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resources/features/Cart.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/features/Cart.feature" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -42,6 +45,11 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/src/test/java/steps" />
     <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="model.api" />
+    </key>
   </component>
   <component name="RunManager" selected="JUnit.ZeDeliveryTest">
     <configuration name="CartTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
@@ -92,6 +100,21 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="ProductCatalogTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="zeDeliveryTest" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="runners.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="runners" />
+      <option name="MAIN_CLASS_NAME" value="runners.ProductCatalogTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="ZeDeliveryTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="zeDeliveryTest" />
       <extension name="coverage">
@@ -110,6 +133,7 @@
     <recent_temporary>
       <list>
         <item itemvalue="JUnit.ZeDeliveryTest" />
+        <item itemvalue="JUnit.ProductCatalogTest" />
         <item itemvalue="JUnit.ChangeAddressTest" />
         <item itemvalue="JUnit.CartTest" />
         <item itemvalue="JUnit.LoginTest" />
@@ -134,10 +158,10 @@
       <screen x="0" y="0" width="1366" height="738" />
     </state>
     <state x="280" y="24" key="#LoginTest/0.0.1366.738@0.0.1366.738" timestamp="1592696525624" />
-    <state x="452" y="70" key="#com.intellij.ide.util.MemberChooser" timestamp="1592774360858">
+    <state x="452" y="70" key="#com.intellij.ide.util.MemberChooser" timestamp="1593090741701">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
-    <state x="452" y="70" key="#com.intellij.ide.util.MemberChooser/0.0.1366.738@0.0.1366.738" timestamp="1592774360858" />
+    <state x="452" y="70" key="#com.intellij.ide.util.MemberChooser/0.0.1366.738@0.0.1366.738" timestamp="1593090741701" />
     <state x="63" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1592796031484">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
@@ -146,42 +170,42 @@
       <screen x="0" y="0" width="1366" height="738" />
     </state>
     <state x="413" y="116" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1366.738@0.0.1366.738" timestamp="1592682918443" />
-    <state x="462" y="124" key="FileChooserDialogImpl" timestamp="1592703084771">
+    <state x="462" y="124" key="FileChooserDialogImpl" timestamp="1593044963939">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
-    <state x="462" y="124" key="FileChooserDialogImpl/0.0.1366.738@0.0.1366.738" timestamp="1592703084771" />
-    <state width="1323" height="258" key="GridCell.Tab.0.bottom" timestamp="1592797042820">
+    <state x="462" y="124" key="FileChooserDialogImpl/0.0.1366.738@0.0.1366.738" timestamp="1593044963939" />
+    <state width="1323" height="156" key="GridCell.Tab.0.bottom" timestamp="1593098565219">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
-    <state width="1323" height="258" key="GridCell.Tab.0.bottom/0.0.1366.738@0.0.1366.738" timestamp="1592797042820" />
-    <state width="1323" height="258" key="GridCell.Tab.0.center" timestamp="1592797042820">
+    <state width="1323" height="156" key="GridCell.Tab.0.bottom/0.0.1366.738@0.0.1366.738" timestamp="1593098565219" />
+    <state width="1323" height="156" key="GridCell.Tab.0.center" timestamp="1593098565219">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
-    <state width="1323" height="258" key="GridCell.Tab.0.center/0.0.1366.738@0.0.1366.738" timestamp="1592797042820" />
-    <state width="1323" height="258" key="GridCell.Tab.0.left" timestamp="1592797042820">
+    <state width="1323" height="156" key="GridCell.Tab.0.center/0.0.1366.738@0.0.1366.738" timestamp="1593098565219" />
+    <state width="1323" height="156" key="GridCell.Tab.0.left" timestamp="1593098565219">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
-    <state width="1323" height="258" key="GridCell.Tab.0.left/0.0.1366.738@0.0.1366.738" timestamp="1592797042820" />
-    <state width="1323" height="258" key="GridCell.Tab.0.right" timestamp="1592797042820">
+    <state width="1323" height="156" key="GridCell.Tab.0.left/0.0.1366.738@0.0.1366.738" timestamp="1593098565219" />
+    <state width="1323" height="156" key="GridCell.Tab.0.right" timestamp="1593098565219">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
-    <state width="1323" height="258" key="GridCell.Tab.0.right/0.0.1366.738@0.0.1366.738" timestamp="1592797042820" />
-    <state width="1323" height="250" key="GridCell.Tab.1.bottom" timestamp="1592789210486">
+    <state width="1323" height="156" key="GridCell.Tab.0.right/0.0.1366.738@0.0.1366.738" timestamp="1593098565219" />
+    <state width="1323" height="250" key="GridCell.Tab.1.bottom" timestamp="1592803388466">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
-    <state width="1323" height="250" key="GridCell.Tab.1.bottom/0.0.1366.738@0.0.1366.738" timestamp="1592789210486" />
-    <state width="1323" height="250" key="GridCell.Tab.1.center" timestamp="1592789210486">
+    <state width="1323" height="250" key="GridCell.Tab.1.bottom/0.0.1366.738@0.0.1366.738" timestamp="1592803388466" />
+    <state width="1323" height="250" key="GridCell.Tab.1.center" timestamp="1592803388466">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
-    <state width="1323" height="250" key="GridCell.Tab.1.center/0.0.1366.738@0.0.1366.738" timestamp="1592789210486" />
-    <state width="1323" height="250" key="GridCell.Tab.1.left" timestamp="1592789210486">
+    <state width="1323" height="250" key="GridCell.Tab.1.center/0.0.1366.738@0.0.1366.738" timestamp="1592803388466" />
+    <state width="1323" height="250" key="GridCell.Tab.1.left" timestamp="1592803388466">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
-    <state width="1323" height="250" key="GridCell.Tab.1.left/0.0.1366.738@0.0.1366.738" timestamp="1592789210486" />
-    <state width="1323" height="250" key="GridCell.Tab.1.right" timestamp="1592789210486">
+    <state width="1323" height="250" key="GridCell.Tab.1.left/0.0.1366.738@0.0.1366.738" timestamp="1592803388466" />
+    <state width="1323" height="250" key="GridCell.Tab.1.right" timestamp="1592803388466">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
-    <state width="1323" height="250" key="GridCell.Tab.1.right/0.0.1366.738@0.0.1366.738" timestamp="1592789210486" />
+    <state width="1323" height="250" key="GridCell.Tab.1.right/0.0.1366.738@0.0.1366.738" timestamp="1592803388466" />
     <state x="213" y="24" key="Maven.ArtifactSearchDialog" timestamp="1592674140645">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
@@ -198,14 +222,26 @@
       <screen x="0" y="0" width="1366" height="738" />
     </state>
     <state x="492" y="286" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1366.738@0.0.1366.738" timestamp="1592799003224" />
-    <state x="435" y="290" key="org.jetbrains.plugins.cucumber.inspections.ui.CreateStepDefinitionFileDialog" timestamp="1592703192378">
+    <state x="435" y="290" key="org.jetbrains.plugins.cucumber.inspections.ui.CreateStepDefinitionFileDialog" timestamp="1593044972822">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
-    <state x="435" y="290" key="org.jetbrains.plugins.cucumber.inspections.ui.CreateStepDefinitionFileDialog/0.0.1366.738@0.0.1366.738" timestamp="1592703192378" />
+    <state x="435" y="290" key="org.jetbrains.plugins.cucumber.inspections.ui.CreateStepDefinitionFileDialog/0.0.1366.738@0.0.1366.738" timestamp="1593044972822" />
     <state x="346" y="59" width="672" height="678" key="search.everywhere.popup" timestamp="1592712987768">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
     <state x="346" y="59" width="672" height="678" key="search.everywhere.popup/0.0.1366.738@0.0.1366.738" timestamp="1592712987768" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-field">
+          <url>file://$PROJECT_DIR$/src/main/java/model/api/ShowCase.java</url>
+          <line>13</line>
+          <properties field="shelves" class="model.api.ShowCase" />
+          <option name="timeStamp" value="3" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/zeDeliveryTest$LoginTest.ic" NAME="LoginTest Coverage Results" MODIFIED="1592712441890" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">

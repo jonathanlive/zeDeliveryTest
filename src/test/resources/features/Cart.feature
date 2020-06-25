@@ -2,7 +2,7 @@
 Feature: Cart
 
   @test
-  Scenario Outline: Add items on the card
+  Scenario Outline: Add items on the cart
     Given user is on the homepage
     When the user selects a category <category>
     And selects the first item on the list
